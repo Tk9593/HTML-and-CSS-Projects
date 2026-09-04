@@ -4,32 +4,33 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Learn about automotive paint technology, including surface preparation, sanding, color matching, and spray painting.">
 	<title>Auto Paint Knowledge</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="style.css">
 	</head>
 	
 <body>
  
  <!--NAVBAR-->
- <nav>
-	<ul>
-	<li><a href="index.html">Home</a></li>
-	<li><a href="contact.html">Contact</a></li>
-	
+<nav class="nav-bar">
+	<ul id="nav-border">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="contact.html">Contact</a></li>
 	</ul>
-	
+
 	<ul>
 		<li><a href="#preparation">Surface Preparation</a></li>
-        <li><a href="#sanding">Sanding</a></li>
-        <li><a href="#spray-painting">Spray Painting</a></li>
+		<li><a href="#sanding">Sanding</a></li>
+		<li><a href="#spray-painting">Spray Painting</a></li>
 		<li><a href="#color-matching">Color Matching</a></li>
 		<li><a href="#video">Video</a></li>
 	</ul>
-
+	
 </nav>
 <!--HEADER-->
 <header>
 
 	<div>
-		<h1>Welcome to Auto Paint Knowledge!</h1>
+		<h1 class="animate-text">Welcome to Auto Paint Knowledge!</h1>	
 		
 		<p><em>Learn the skills and techniques behind professional automotive refinishing.</em></p>
 	</div>
@@ -46,27 +47,40 @@
     <div>
         <h2>Explore Automotive Paint Technology</h2>
 
-        <div id="preparation">
-            <h3>Surface Preparation</h3>
-            <img src="images/preparation.jpg" width="500" alt="Preparing an automotive panel for painting">
-        </div>
+        <div class="container">
 
-        <div id="sanding">
-            <h3>Sanding</h3>
-            <img src="images/sanding.jpg" width="500" alt="Sanding an automotive panel">
-        </div>
-		
+	<div id="preparation" class="column">
+		<div class="image-container">
+			<h3>Surface Preparation</h3>
+			<img src="images/preparation.jpg" width="500" alt="Preparing an automotive panel for painting">
+		<div class="overlay"></div>
+		</div>
+	</div>
 
-        <div id="spray-painting">
-            <h3>Modern Automotive Spray Painting</h3>
-            <img src="images/auto-paint.png" width="500" alt="Automotive painter applying blue paint on a car in a spray booth">
+	<div id="sanding" class="column">
+		<div class="image-container">
+			<h3>Sanding</h3>
+			<img src="images/sanding.jpg" width="500" alt="Sanding an automotive panel">
+		<div class="overlay"></div>
+		</div>
+	</div>
 
-        </div>
-		
-		<div id="color-matching">
-            <h3>Color Matching</h3>
-            <img src="images/color-match.jpg" width="500" alt="Automotive paint color matching">
-        </div>
+	<div id="spray-painting" class="column">
+		<div class="image-container">
+			<h3>Modern Automotive Spray Painting</h3>
+			<img src="images/auto-paint.png" width="500" alt="Automotive painter applying blue paint on a car in a spray booth">
+		<div class="overlay"></div></div>
+	</div>
+
+	<div id="color-matching" class="column">
+		<div class="image-container">
+			<h3>Color Matching</h3>
+			<img src="images/color-match.jpg" width="500" alt="Automotive paint color matching">
+		<div class="overlay"></div>
+		</div>
+	</div>
+
+</div>
         
 			<div id="video">
 				<h3>Automotive Spray Painting Video</h3>

@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+body{
+    margin: 0;
+    background-color: #f4f7f9;
+    color:#1f2933;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+
+}
+header{
+    background-color: #0b3d5c;
+	color: white;
+	padding: 40px 20px;
+	text-align: center;
+}
+h1,
+h2,
+h3 {
+	font-family: 'Mukta', sans-serif;
+	text-align: center;
+	letter-spacing: 1px;
+	text-shadow: 1px 0.5px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+h1 {
+	margin: 0;
+	font-size: 38px;
+}
+.nav-bar {
+	background-color: #216391;
+	padding: 10px 12px;
+	text-align: center;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+#nav-border {
+	padding-bottom: 10px;
+	border-bottom: 3px solid #ffffff;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 5px 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 12px;
+}
+
+nav a {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	text-decoration: none;
+	text-shadow: 1px 0.5px 4px rgba(46, 31, 31, 0.5);
+}
+
+nav a:hover {
+	color: #d7eaf7;
+}
+section,
+article {
+	max-width: 1100px;
+	margin: 30px auto;
+	padding: 20px;
+}
+
+section h2,
+article h2 {
+	color: #0b3d5c;
+	margin-bottom: 25px;
+}
+
+section h3 {
+	color: #1f5f7a;
+	margin-top: 35px;
+	margin-bottom: 12px;
+    font-size: 30px;
+}
+
+blockquote {
+	max-width: 1100px;
+	margin: 25px auto;
+	padding: 15px 20px;
+	background-color: #e6f2f8;
+	border-left: 5px solid #0b3d5c;
+	font-style: italic;
+}
+
+
+img {
+	width: 500px;
+	max-width: 100%;
+	height: 350px;
+	object-fit: cover;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4),
+				0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+video,
+iframe {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	height: auto;
+	border-radius: 20px;
+	border: none;
+}
+
+#video {
+	clear: both;
+	background-color: #c3e0c5;
+	padding: 5px 20px 50px;
+}
+
+
+footer {
+	background-color: #216391;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	margin-top: 50px;
+}
+
+footer table {
+	width: 100%;
+	margin: 0 auto;
+}
+
+footer td {
+	width: 50%;
+	padding: 0 20px;
+	text-align: center;
+}
+
+footer td p {
+	margin: 0;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+@keyframes color-text {
+	0% {
+		color: #b5e1ff;
+	}
+
+	100% {
+		color: white;
+	}
+}
+
+.animate-text {
+	animation: color-text 4s;
+}
+
+#contact-h3 {
+	font-size: 20px;
+	font-weight: 400;
+	text-shadow: none;
+	margin-top: 10px;
+}
+section {
+	text-align: center;
+}
+.column {
+	float: left;
+	width: 48%;
+}
+/* PART FOUR */
+
+
+.container::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.image-container {
+	position: relative;
+	width: 500px;
+	max-width: 100%;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+/* PART FIVE: IMAGE BACKGROUNDS */
+
+#preparation,
+#color-matching {
+	background-color: #d7eaf7;
+}
+
+#sanding,
+#spray-painting {
+	background-color: #c3e0c5;
+}
+
+/* Creates a dark overlay on each image */
+
+.overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 350px;
+	border-radius: 10px;
+	background-color: rgb(0, 0, 0);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+/* Shows the overlay when the mouse is over an image */
+
+.image-container:hover .overlay {
+	opacity: 0.6;
+}
+
+/* PART SIX: CONTACT FORM */
+
+/* PART SIX: CONTACT FORM */
+
+form {
+	padding: 15px;
+	display: table;
+	margin: auto;
+}
+
+input {
+	border: 2px solid rgb(165, 165, 165);
+	border-radius: 2px;
+	padding: 6px;
+	margin: 10px 15px 10px 0;
+	font-size: 20px;
+	color: rgb(80, 80, 80);
+}
+
+/* PART SEVEN: FORM INTERACTIONS */
+
+input:focus {
+	box-sizing: border-box;
+	border: 2px solid #0a3f63;
+	color: #000000;
+	transition: 0.3s ease-in;
+	outline: none;
+}
+
+label {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	margin: 10px;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 3px solid rgb(165, 165, 165);
+	border-radius: 4px;
+	background-color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(80, 80, 80);
+	font-size: 15px;
+	resize: both;
+	transition: color 0.3s ease-out;
+}
+
+textarea:focus {
+	box-sizing: border-box;
+	color: #000000;
+	border: 3px solid #0a3f63;
+	transition: 0.3s ease-in;
+	outline: none;
+}
+
+input[type="submit"] {
+	background-color: #0a3f63;
+	border: none;
+	border-radius: 5px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color: white;
+	padding: 16px 32px;
+	margin: 4px 2px;
+	cursor: pointer;
+	float: right;
+}
+
+input[type="submit"]:hover {
+	background-color: #052133;
+}
