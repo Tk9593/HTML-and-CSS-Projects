@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Creating Effects with CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+
+            <li class="drop">
+                <a href="#">Images</a>
+
+                <div class="rollover-menu">
+                    <a href="#image1">Image 1</a>
+                    <a href="#image2">Image 2</a>
+                    <a href="#image3">Image 3</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- IMAGES -->
+    <section>
+
+        <!-- IMAGE ONE: OVERLAY EFFECT -->
+        <div class="image-container" id="image1">
+            <img src="images/japan-one.jpg" alt="japan scenery">
+            <div class="overlay"></div>
+        </div>
+
+        <!-- IMAGE TWO: ZOOM EFFECT -->
+        <div class="image-container" id="image2">
+            <img src="images/japan-two.jpg" class="zoom" alt="japan scenery">
+        </div>
+
+        <!-- IMAGE THREE: CIRCLE EFFECT -->
+        <div class="image-container" id="image3">
+            <div class="circle">
+                <img src="images/japan-three.jpg" alt="japan scenery">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-text">
+            <p>The Tech Academy &copy;</p>
+        </div>
+    </footer>
+
+</body>
+</html>
