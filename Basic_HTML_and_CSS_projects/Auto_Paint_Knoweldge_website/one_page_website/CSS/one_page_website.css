@@ -12,3 +12,102 @@ textarea {
     padding: 10px;
     box-sizing: border-box;
 }
+
+/* Five equal columns for the gallery thumbnails. */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery h2 {
+    width: 100%;
+}
+
+#gallery > img {
+    box-sizing: border-box;
+    width: 20%;
+    height: 150px;
+    object-fit: cover;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#gallery > img:hover {
+    opacity: 0.8;
+}
+
+#gallery > img:focus-visible {
+    outline: 3px solid #1f4e79;
+}
+
+/* The enlarged image overlay. */
+#lightbox {
+    box-sizing: border-box;
+    width: 90vw;
+    max-width: 1100px;
+    max-height: 95vh;
+    padding: 60px 50px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #111;
+    color: white;
+}
+
+#lightbox::backdrop {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#lightbox figure {
+    margin: 0;
+    text-align: center;
+}
+
+#lightbox-image {
+    display: block;
+    max-width: 100%;
+    max-height: 65vh;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+#lightbox-caption {
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+}
+
+#lightbox button {
+    position: absolute;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#lightbox button:hover {
+    background-color: #444;
+}
+
+#lightbox-close {
+    top: 5px;
+    right: 10px;
+}
+
+#lightbox-prev {
+    top: 45%;
+    left: 5px;
+}
+
+#lightbox-next {
+    top: 45%;
+    right: 5px;
+}
+
+/* Use fewer columns on smaller screens. */
+@media (max-width: 700px) {
+    #gallery > img {
+        width: 50%;
+    }
+}
