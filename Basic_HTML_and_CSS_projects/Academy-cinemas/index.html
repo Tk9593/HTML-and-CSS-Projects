@@ -29,8 +29,8 @@
 
             <button class="navbar-toggler"
                 type="button"
-                data-toggle="collapse"
-                data-target="#navbarNavDropdown"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown"
                 aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -341,39 +341,27 @@
 
 <!-- FOOTER -->
 <section>
-    <div class="container">
-        <footer class="py-4">
+    <div class="container-fluid">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
 
-            <div class="row align-items-center text-center">
+            <p class="col-md-4 mb-0 footer-text">&copy; Academy Cinemas</p>
 
-                <!-- CONTACT INFORMATION -->
-                <div class="col-md-4">
-                    <h4 class="footer-heading">Contact Us</h4>
-                    <p class="footer-info">info@academycinemas.ca</p>
-                    <p class="footer-info">Brampton, Ontario</p>
-                </div>
+            <img src="images/logo.png" class="col-md-4 footer-img" alt="Academy Cinemas logo">
 
-                <!-- LOGO AND COPYRIGHT -->
-                <div class="col-md-4">
-                    <img src="images/logo.png"
-                        class="footer-img"
-                        alt="Academy Cinemas logo">
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item">
+                    <a href="#now-playing" class="nav-link px-2 footer-text">Now Playing</a>
+                </li>
 
-                    <p class="footer-info">
-                        &copy; 2026 Academy Cinemas
-                    </p>
-                </div>
+                <li class="nav-item">
+                    <a href="#tickets" class="nav-link px-2 footer-text">Tickets</a>
+                </li>
 
-                <!-- SOCIAL MEDIA LINKS -->
-                <div class="col-md-4">
-                    <h4 class="footer-heading">Follow Us</h4>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link px-2 footer-text">Contact</a>
+                </li>
+            </ul>
 
-                    <a href="#" class="footer-link">Facebook</a>
-                    <a href="#" class="footer-link">Instagram</a>
-                    <a href="#" class="footer-link">YouTube</a>
-                </div>
-
-            </div>
         </footer>
     </div>
 </section>
